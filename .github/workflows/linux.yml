@@ -12,6 +12,7 @@ jobs:
         compiler: [g++, clang++]
     runs-on: ubuntu-latest
     name: 🐧 Linux (${{ matrix.compiler }})
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@main
       - name: Prepare Environment
